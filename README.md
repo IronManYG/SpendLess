@@ -27,7 +27,7 @@
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Impact of Modular Architecture](#impact-of-modular-architecture)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgment](#acknowledgment)
 
 ## Features
 
@@ -36,7 +36,7 @@
 - **Transaction Management:** Easily track income and expenses. All transactions are encrypted and displayed according to user-defined formatting.
 - **Custom Preferences:** Set your currency symbol, decimal and thousands separators, and expense formatting options.
 - **Robust Error Handling:** Includes visual red error banners for failed logins, incorrect PIN entries, and duplicate username issues.
-- **Data Export:** Export your transaction history to CSV (or PDF in extended versions) for record-keeping.
+- **Data Export:** Export your transaction history to CSV (or PDF on future) for record-keeping.
 
 ## Screenshots
 
@@ -183,7 +183,7 @@ git clone https://github.com/IronManYG/spendless.git
    
 ## Impact of Modular Architecture
 
-The modular architecture of Maktabati provides several key benefits across different aspects of development:
+The modular architecture of SpendLess provides several key benefits across different aspects of development:
 
 1. **Development Workflow**
    - Enables parallel development of features (Auth, Transactions, Export, etc.)
