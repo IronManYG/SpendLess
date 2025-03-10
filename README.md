@@ -177,7 +177,7 @@ git clone https://github.com/IronManYG/spendless.git
 The modular architecture of Maktabati provides several key benefits across different aspects of development:
 
 1. **Development Workflow**
-   - Enables parallel development of features (Auth, Library, Viewer, etc.)
+   - Enables parallel development of features (Auth, Transactions, Export, etc.)
    - Reduces merge conflicts through clear module boundaries
    - Allows different teams to work independently on separate features
    - Facilitates easier code reviews with focused changes
@@ -201,7 +201,7 @@ The modular architecture of Maktabati provides several key benefits across diffe
    - Better code organization and navigation
 
 5. **Feature Development**
-   - Each feature (Auth, Library, Viewer, etc.) can be developed and tested independently
+   - Each feature (Auth, Transactions, Export, etc.) can be developed and tested independently
    - Clear boundaries between different app functionalities
    - Easier to add new features without affecting existing ones
    - Supports potential dynamic feature delivery in the future
