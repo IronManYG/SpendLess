@@ -57,17 +57,26 @@ SpendLess is built with a clean, modular architecture that emphasizes security, 
 
 ## Tech Stack & Libraries
 
-- **Programming Languages & Frameworks:**  
-  - Swift / Kotlin (depending on your platform)
-  - Modern UI frameworks (e.g., SwiftUI for iOS or Jetpack Compose for Android)
-- **Security & Encryption:**  
-  - Standard encryption libraries for securing PIN and transaction data
-- **Networking & Data Persistence:**  
-  - RESTful APIs for backend communication  
-  - Local database libraries (e.g., Room for Android or Core Data for iOS)
-- **UI Components:**  
-  - Material Design (or platform-specific components)
-  - Custom animated components for error banners and transaction feedback
+- Minimum SDK level 25
+- Modern Development
+  - [Kotlin](https://kotlinlang.org/) + [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/)
+  - [Jetpack Compose](https://developer.android.com/jetpack/compose) for modern UI development
+  - [Koin](https://insert-koin.io/) for dependency injection
+- Architecture Components
+  - Room for local database
+  - Lifecycle components
+  - Navigation Compose
+  - WorkManager for background tasks
+- Networking & Data
+  - [Ktor Client](https://ktor.io/docs/client.html) for network operations
+  - [Kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) for JSON parsing
+- UI Components
+  - [Material Design 3](https://m3.material.io/) components
+  - [Coil](https://coil-kt.github.io/coil/) for image loading
+- Testing & Debugging
+  - JUnit for unit testing
+  - [LeakCanary](https://square.github.io/leakcanary/) for memory leak detection
+  - [Timber](https://github.com/JakeWharton/timber) for logging
 
 ## Module Design
 
