@@ -147,6 +147,16 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jet
 # Room
 room = { id = "androidx.room", version.ref = "room" }
 
+#
+spendless-android-application = { id = "spendless.android.application", version = "unspecified" }
+spendless-android-application-compose = { id = "spendless.android.application.compose", version = "unspecified" }
+spendless-android-library = { id = "spendless.android.library", version = "unspecified" }
+spendless-android-library-compose = { id = "spendless.android.library.compose", version = "unspecified" }
+spendless-android-feature-ui = { id = "spendless.android.feature.ui", version = "unspecified" }
+spendless-android-room = { id = "spendless.android.room", version = "unspecified" }
+spendless-jvm-library = { id = "spendless.jvm.library", version = "unspecified" }
+spendless-jvm-ktor = { id = "spendless.jvm.ktor", version = "unspecified" }
+
 [bundles]
 # Compose
 compose = [
