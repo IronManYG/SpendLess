@@ -20,6 +20,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SpendLess"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 include(":auth:data")
 include(":auth:domain")
@@ -38,3 +39,4 @@ include(":settings:presentation")
 include(":export:data")
 include(":export:domain")
 include(":export:presentation")
+include(":transactions:network")
