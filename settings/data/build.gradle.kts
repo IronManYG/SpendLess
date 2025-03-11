@@ -33,6 +33,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.timber)
-    implementation(libs.bundles.koin)
+    implementation(libs.kotlinx.coroutines.core)
+
+    implementation(projects.core.domain)
+    implementation(projects.settings.domain)
 }
