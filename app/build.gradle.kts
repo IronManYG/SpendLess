@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.spendless.android.application)
+    alias(libs.plugins.spendless.android.application.compose)
 }
 
 android {
