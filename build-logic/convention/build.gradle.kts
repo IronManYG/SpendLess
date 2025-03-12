@@ -22,5 +22,9 @@ gradlePlugin {
             id = "spendless.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+        register("androidLibrary") {
+            id = "spendless.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
     }
 }
