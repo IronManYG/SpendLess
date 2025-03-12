@@ -38,5 +38,9 @@ gradlePlugin {
             id = "spendless.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
+        register("jvmLibrary") {
+            id = "spendless.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
