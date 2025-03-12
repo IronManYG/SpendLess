@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.spendless.android.library)
+    alias(libs.plugins.spendless.android.room)
 }
 
 android {

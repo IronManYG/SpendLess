@@ -34,5 +34,9 @@ gradlePlugin {
             id = "spendless.android.feature.ui"
             implementationClass = "AndroidFeatureUiConventionPlugin"
         }
+        register("androidRoom") {
+            id = "spendless.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
     }
 }
