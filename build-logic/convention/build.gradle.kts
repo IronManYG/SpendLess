@@ -42,5 +42,9 @@ gradlePlugin {
             id = "spendless.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
+        register("jvmKtor") {
+            id = "spendless.jvm.ktor"
+            implementationClass = "JvmKtorConventionPlugin"
+        }
     }
 }
