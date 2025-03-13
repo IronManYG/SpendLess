@@ -42,6 +42,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 object AppIcons {
+    val WalletMoney: ImageVector
+        @Composable
+        get() = ImageVector.vectorResource(id = R.drawable.wallet_money)
+
     val ArrowBack: ImageVector
         @Composable
         get() = Icons.AutoMirrored.Default.ArrowBack
@@ -136,6 +140,7 @@ fun AppIconsPreview(modifier: Modifier = Modifier) {
             color = Color.White
         ) {
             val icons = listOf(
+                AppIcons.WalletMoney to "WalletMoney",
                 AppIcons.ArrowBack to "ArrowBack",
                 AppIcons.ArrowForward to "ArrowForward",
                 AppIcons.Check to "Check",
