@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_message">Welcome to SpendLess!</string>
+    <string name="welcome_question">How can we address you?</string>
+    <string name="username_creation_label">Create a unique username</string>
+    <string name="username_hint">username</string>
+    <string name="next_button_label">Next</string>
+    <string name="login_prompt">Already have an account?</string>
+</resources>

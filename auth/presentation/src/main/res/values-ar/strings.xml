@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_message">مرحبًا بك في تطبيق سْبِندليس!</string>
+    <string name="welcome_question">كيف يمكننا مخاطبتك؟</string>
+    <string name="username_creation_label">أنشئ اسم مستخدم فريد</string>
+    <string name="username_hint">اسم المستخدم</string>
+    <string name="next_button_label">التالي</string>
+    <string name="login_prompt">هل لديك حساب بالفعل؟</string>
+</resources>
