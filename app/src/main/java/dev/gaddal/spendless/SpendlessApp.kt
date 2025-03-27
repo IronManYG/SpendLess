@@ -1,6 +1,7 @@
 package dev.gaddal.spendless
 
 import android.app.Application
+import dev.gaddal.auth.data.di.authDataModule
 import dev.gaddal.core.data.di.coreDataModule
 import dev.gaddal.core.database.di.databaseModule
 import dev.gaddal.spendless.di.appModule
@@ -25,6 +26,7 @@ class SpendlessApp : Application() {
             androidLogger()
             androidContext(this@SpendlessApp)
             modules(
+                authDataModule,
                 appModule,
                 coreDataModule,
                 databaseModule,
