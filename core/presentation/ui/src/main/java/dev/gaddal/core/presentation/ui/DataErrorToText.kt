@@ -14,6 +14,10 @@ fun DataError.asUiText(): UiText {
             R.string.error_disk_full
         )
 
+        DataError.Local.UNAUTHENTICATED -> UiText.StringResource(
+            R.string.error_unauthenticated
+        )
+
         DataError.Local.PERMISSION_DENIED -> UiText.StringResource(
             R.string.error_permission_denied
         )
@@ -36,6 +40,18 @@ fun DataError.asUiText(): UiText {
 
         DataError.Local.RESOURCE_BUSY -> UiText.StringResource(
             R.string.error_resource_busy
+        )
+
+        DataError.Local.ALREADY_EXISTS -> UiText.StringResource(
+            R.string.error_already_exists
+        )
+
+        DataError.Local.INVALID_PIN -> UiText.StringResource(
+            R.string.error_invalid_pin
+        )
+
+        DataError.Local.NOT_FOUND -> UiText.StringResource(
+            R.string.error_not_found
         )
 
         DataError.Network.REQUEST_TIMEOUT -> UiText.StringResource(
