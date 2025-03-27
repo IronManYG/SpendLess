@@ -51,6 +51,9 @@ junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 
+# Security
+argon2 = "2.11"
+
 # Project versions
 projectApplicationId = "dev.gaddal.spendless"
 projectVersionName = "1.0"
@@ -118,6 +121,7 @@ desugar-jdk-libs = { module = "com.android.tools:desugar_jdk_libs", version.ref 
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 leakcanary = { group = "com.squareup.leakcanary", name = "leakcanary-android", version.ref = "leakcanary" }
 lottie = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie" }
+argon2-jvm = { group = "de.mkammerer", name = "argon2-jvm", version.ref = "argon2" }
 
 # Testing
 junit = { group = "junit", name = "junit", version.ref = "junit" }
