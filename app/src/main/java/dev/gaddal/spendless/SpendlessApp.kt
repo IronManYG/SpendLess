@@ -2,6 +2,8 @@ package dev.gaddal.spendless
 
 import android.app.Application
 import dev.gaddal.auth.data.di.authDataModule
+import dev.gaddal.core.data.di.coreDataModule
+import dev.gaddal.spendless.di.appModule
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import org.koin.android.ext.koin.androidContext
@@ -24,6 +26,8 @@ class SpendlessApp : Application() {
             androidContext(this@SpendlessApp)
             modules(
                 authDataModule,
+                appModule,
+                coreDataModule,
             )
         }
     }
