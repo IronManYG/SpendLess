@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -20,12 +21,17 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import dev.gaddal.auth.presentation.R
 import dev.gaddal.core.presentation.designsystem.AppIcons.WalletMoney
+import dev.gaddal.core.presentation.designsystem.SpendLessTheme
+import dev.gaddal.core.presentation.ui.LocalesPreview
 
 @Composable
-fun LogoAndTitleSection() {
+fun LogoAndTitleSection(
+    title: String,
+    subtitle: String
+) {
     Box(
         modifier = Modifier
-            .padding(top = 88.dp)
+            .padding(top = 32.dp)
             .size(64.dp)
             .background(
                 color = MaterialTheme.colorScheme.primaryContainer,
@@ -47,16 +53,13 @@ fun LogoAndTitleSection() {
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(
-            text = buildString {
-                appendLine(stringResource(R.string.welcome_message))
-                append(stringResource(R.string.welcome_question))
-            },
+            text = title,
             color = MaterialTheme.colorScheme.onSurface,
             textAlign = TextAlign.Center,
             style = MaterialTheme.typography.headlineMedium
         )
         Text(
-            text = stringResource(R.string.username_creation_label),
+            text = subtitle,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center,
             style = MaterialTheme.typography.bodyLarge
@@ -64,4 +67,22 @@ fun LogoAndTitleSection() {
     }
 
     Spacer(modifier = Modifier.height(32.dp))
+}
+
+@LocalesPreview()
+@Composable
+fun LogoAndTitleSectionPreview() {
+    SpendLessTheme {
+        Column(
+            modifier = Modifier
+                .padding(8.dp)
+                .fillMaxWidth(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            LogoAndTitleSection(
+                title = stringResource(R.string.create_pin),
+                subtitle = stringResource(R.string.pin_login_description),
+            )
+        }
+    }
 }

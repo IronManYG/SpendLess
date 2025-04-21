@@ -6,4 +6,11 @@
     <string name="username_hint">username</string>
     <string name="next_button_label">Next</string>
     <string name="login_prompt">Already have an account?</string>
+    <string name="error_username_exists">This username has already been taken!</string>
+    <string name="registration_successful">Registration successful! You can log in now.</string>
+    <string name="create_pin">Create PIN</string>
+    <string name="pin_login_description">Use PIN to login to your account</string>
+    <string name="confirm_pin">Repeat Your PIN</string>
+    <string name="repeat_pin_description">Enter your PIN again\n</string>
+    <string name="error_pins_not_match">PINs don’t match. Try again</string>
 </resources>

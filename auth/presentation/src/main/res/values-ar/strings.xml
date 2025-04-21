@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="welcome_message">مرحبًا بك في تطبيق سْبِندليس!</string>
+    <string name="welcome_message">مرحبًا بك في سْبِندليس!</string>
     <string name="welcome_question">كيف يمكننا مخاطبتك؟</string>
     <string name="username_creation_label">أنشئ اسم مستخدم فريد</string>
     <string name="username_hint">اسم المستخدم</string>
     <string name="next_button_label">التالي</string>
     <string name="login_prompt">هل لديك حساب بالفعل؟</string>
+    <string name="error_username_exists">اسم المستخدم هذا مأخوذ بالفعل!</string>
+    <string name="registration_successful">تم التسجيل بنجاح! يمكنك تسجيل الدخول الآن.</string>
+    <string name="create_pin">إنشاء رقم سري</string>
+    <string name="pin_login_description">استخدم الرقم السري لتسجيل الدخول إلى حسابك</string>
+    <string name="confirm_pin">كرر رقمك السري</string>
+    <string name="repeat_pin_description">أدخل رقمك السري مرة أخرى</string>
+    <string name="error_pins_not_match">الارقام السرية غير متطابقة. حاول مرة أخرى</string>
 </resources>
