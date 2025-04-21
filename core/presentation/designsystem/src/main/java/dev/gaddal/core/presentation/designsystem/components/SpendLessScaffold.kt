@@ -1,6 +1,8 @@
 package dev.gaddal.core.presentation.designsystem.components
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.FabPosition
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -15,6 +17,7 @@ fun SpendLessScaffold(
     bottomBar: @Composable () -> Unit = {},
     floatingActionButton: @Composable () -> Unit = {},
     containerColor: Color = MaterialTheme.colorScheme.background,
+    progressBarState: ProgressBarState = ProgressBarState.Idle,
     content: @Composable (PaddingValues) -> Unit
 ) {
     Scaffold(
@@ -25,6 +28,14 @@ fun SpendLessScaffold(
         containerColor = containerColor,
         modifier = modifier
     ) { padding ->
-        content(padding)
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            content(padding)
+
+            if (progressBarState is ProgressBarState.Loading) {
+                CircularIndeterminateProgressBar()
+            }
+        }
     }
 }
