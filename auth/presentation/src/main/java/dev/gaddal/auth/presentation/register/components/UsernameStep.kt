@@ -46,9 +46,10 @@ fun UsernameStep(
             append(stringResource(R.string.welcome_question))
         },
         subtitle = stringResource(R.string.username_creation_label),
-        errorVisible = !state.isUsernameAvailable,
+        errorVisible = !state.isUsernameAvailable && state.showError,
         errorMessage = stringResource(R.string.error_username_exists),
-        useWeight = false
+        useWeight = false,
+        onErrorDismissed = { onAction(RegisterAction.DismissError) }
     ) {
         UsernameInputSection(state)
         ActionButtonsSection(state, onAction)

@@ -13,4 +13,5 @@ data class RegisterState(
     val pinCode: String = "",
     val confirmPinCode: String = "",
     val isPinsMatch: Boolean = true,
+    val showError: Boolean = true,
 )

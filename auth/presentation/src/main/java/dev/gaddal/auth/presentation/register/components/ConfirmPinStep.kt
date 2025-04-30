@@ -19,8 +19,9 @@ fun ConfirmPinStep(
         modifier = modifier,
         title = stringResource(R.string.confirm_pin),
         subtitle = stringResource(R.string.repeat_pin_description),
-        errorVisible = !state.isPinsMatch,
-        errorMessage = stringResource(R.string.error_pins_not_match)
+        errorVisible = !state.isPinsMatch && state.showError,
+        errorMessage = stringResource(R.string.error_pins_not_match),
+        onErrorDismissed = { onAction(RegisterAction.DismissError) }
     ) {
         PinInputSection(
             pinLength = state.confirmPinCode.length,

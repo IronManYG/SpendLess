@@ -8,4 +8,5 @@ sealed interface RegisterAction {
     data object OnPinDelete : RegisterAction
     data class OnConfirmPinInput(val digit: String) : RegisterAction
     data object OnConfirmPinDelete : RegisterAction
+    data object DismissError : RegisterAction
 }

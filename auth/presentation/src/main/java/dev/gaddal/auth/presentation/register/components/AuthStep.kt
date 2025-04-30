@@ -18,7 +18,8 @@ fun AuthStep(
     subtitle: String,
     errorVisible: Boolean = false,
     errorMessage: String = "",
-    useWeight: Boolean = true, // New parameter
+    useWeight: Boolean = true,
+    onErrorDismissed: () -> Unit = {},
     content: @Composable () -> Unit
 ) {
     Column(
@@ -43,7 +44,8 @@ fun AuthStep(
         // Handle error messages
         ErrorMessageHandler(
             isVisible = errorVisible,
-            errorMessage = errorMessage
+            errorMessage = errorMessage,
+            onErrorDismissed = onErrorDismissed
         )
     }
 }

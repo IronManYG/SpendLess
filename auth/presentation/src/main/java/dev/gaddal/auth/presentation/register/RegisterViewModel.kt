@@ -41,6 +41,7 @@ class RegisterViewModel(
                                 it.copy(
                                     isUsernameValid = isValidUsername,
                                     isUsernameAvailable = true, // Reset on typing
+                                    showError = true // Reset error visibility
                                 )
                             }
                         }
@@ -70,7 +71,7 @@ class RegisterViewModel(
                         if (isAvailable) {
                             _state.update { it.copy(currentStep = RegistrationStep.PIN_CODE) }
                         } else {
-                            _state.update { it.copy(isUsernameAvailable = false) }
+                            _state.update { it.copy(isUsernameAvailable = false, showError = true) }
                         }
                     }
                 }
@@ -137,7 +138,7 @@ class RegisterViewModel(
 
                             }
                         } else {
-                            _state.update { it.copy(isPinsMatch = false) }
+                            _state.update { it.copy(isPinsMatch = false, showError = true) }
                         }
                     }
                 }
@@ -152,6 +153,10 @@ class RegisterViewModel(
                         )
                     }
                 }
+            }
+
+            RegisterAction.DismissError -> {
+                _state.update { it.copy(showError = false) }
             }
 
             else -> Unit
