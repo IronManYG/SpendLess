@@ -8,6 +8,8 @@ android {
 
 dependencies {
     implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.androidx.datastore)
+    implementation(libs.bundles.koin)
 
     implementation(projects.core.domain)
     implementation(projects.settings.domain)

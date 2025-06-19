@@ -5,6 +5,8 @@ import dev.gaddal.auth.data.di.authDataModule
 import dev.gaddal.auth.presentation.di.authViewModelModule
 import dev.gaddal.core.data.di.coreDataModule
 import dev.gaddal.core.database.di.databaseModule
+import dev.gaddal.settings.data.di.settingsDataModule
+import dev.gaddal.settings.presentation.di.settingsPresentationModule
 import dev.gaddal.spendless.di.appModule
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
@@ -32,6 +34,8 @@ class SpendlessApp : Application() {
                 appModule,
                 coreDataModule,
                 databaseModule,
+                settingsDataModule,
+                settingsPresentationModule,
             )
         }
     }
