@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preferences_title_line1">Set SpendLess</string>
+    <string name="preferences_title_line2">to your preferences</string>
+    <string name="preferences_subtitle">You can change it at any time in Settings</string>
+    <string name="preferences_amount_description">spend this month</string>
+    <string name="preferences_expenses_format">Expenses format</string>
+    <string name="preferences_expenses_format_minus" translatable="false">-$10</string>
+    <string name="preferences_expenses_format_parentheses" translatable="false">($10)</string>
+    <string name="currency">Currency</string>
+    <string name="preferences_decimal_separator">Decimal separator</string>
+    <string name="preferences_decimal_separator_dot" translatable="false">1.00</string>
+    <string name="preferences_decimal_separator_comma" translatable="false">1,00</string>
+    <string name="preferences_thousands_separator">Thousands separator</string>
+    <string name="preferences_thousands_separator_dot" translatable="false">1.000</string>
+    <string name="preferences_thousands_separator_comma" translatable="false">1,000</string>
+    <string name="preferences_thousands_separator_space" translatable="false">1&#160;000</string>
+    <string name="preferences_start_tracking">Start Tracking</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preferences_title_line1">ضبط SpendLess</string>
+    <string name="preferences_title_line2">حسب تفضيلاتك</string>
+    <string name="preferences_subtitle">يمكنك تغييرها في أي وقت من الإعدادات</string>
+    <string name="preferences_amount_description">الإنفاق هذا الشهر</string>
+    <string name="preferences_expenses_format">تنسيق المصاريف</string>
+    <string name="currency">العملة</string>
+    <string name="preferences_decimal_separator">فاصل الكسور العشرية</string>
+    <string name="preferences_thousands_separator">فاصل الآلاف</string>
+    <string name="preferences_start_tracking">ابدأ التتبع</string>
+</resources>

@@ -9,6 +9,7 @@ annotation = "1.9.1"
 appcompat = "1.7.0"
 coreKtx = "1.15.0"
 coreSplashscreen = "1.0.1"
+datastore = "1.1.6"
 lifecycleRuntimeKtx = "2.8.7"
 material = "1.12.0"
 materialIconsExtended = "1.7.8"
@@ -67,6 +68,7 @@ projectVersionCode = "1"
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+androidx-datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
